@@ -1,0 +1,80 @@
+/* .heroPhoto {
+  width: 50%;
+  object-fit: cover;
+  height: 500px;
+  margin-top: 200px;
+} */
+
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Add this to existing styles */
+.carousel-image.expand,
+.carousel-image.hold {
+  filter: brightness(50%);
+}
+
+.carousel-image {
+  position: absolute;
+  object-fit: cover;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+/* Stage 1: From bottom (small size) */
+.carousel-image.enter {
+  opacity: 1;
+  width: 50%;
+  height: 500px;
+  transform: translateY(100%);
+  animation: slideUpSmall 1s forwards;
+}
+
+@keyframes slideUpSmall {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* Stage 2: Expand to full screen */
+.carousel-image.expand {
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(0%);
+}
+
+/* Stage 3: Hold full screen */
+.carousel-image.hold {
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(0%);
+}
+
+/* Stage 4: Shrink back to center */
+.carousel-image.shrink {
+  opacity: 1;
+  width: 50%;
+  height: 500px;
+  transform: translateY(0%);
+}
+
+/* Stage 5: Move up and fade */
+.carousel-image.exit {
+  opacity: 0;
+  width: 50%;
+  height: 500px;
+  transform: translateY(-100%);
+}
