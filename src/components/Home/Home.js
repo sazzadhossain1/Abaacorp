@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import HeroSection from "../HeroSection/HeroSection";
 import NavigationBar from "../NavigationBar/NavigationBar";
+import FirstSection from "../FirstSection/FirstSection";
 
 const Home = () => {
   return (
@@ -11,35 +12,7 @@ const Home = () => {
         <HeroSection></HeroSection>
       </div>
       <div>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
-        <h1>Lorem.</h1>
+        <FirstSection></FirstSection>
       </div>
     </div>
   );
