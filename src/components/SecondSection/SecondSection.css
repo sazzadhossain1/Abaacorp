@@ -1,0 +1,36 @@
+.secondSection_text_div {
+  width: 60%;
+  margin: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 250px;
+}
+.player_div {
+  background-color: black;
+}
+
+.player_img_div {
+  position: relative;
+}
+.playerPhoto {
+  width: 95%;
+  height: 500px;
+  object-fit: cover;
+  margin-top: -150px;
+  filter: brightness(0.8);
+}
+.faCirclePlay {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  cursor: pointer;
+}
+.watch_promo {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 46%;
+  top: 55%;
+}

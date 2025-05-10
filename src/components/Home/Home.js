@@ -3,6 +3,7 @@ import "./Home.css";
 import HeroSection from "../HeroSection/HeroSection";
 import NavigationBar from "../NavigationBar/NavigationBar";
 import FirstSection from "../FirstSection/FirstSection";
+import SecondSection from "../SecondSection/SecondSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       </div>
       <div>
         <FirstSection></FirstSection>
+        <SecondSection></SecondSection>
       </div>
     </div>
   );
