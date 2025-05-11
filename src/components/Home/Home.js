@@ -5,6 +5,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import FirstSection from "../FirstSection/FirstSection";
 import SecondSection from "../SecondSection/SecondSection";
 import ThirdSection from "../ThirdSection/ThirdSection";
+import FourthSection from "../FourthSection/FourthSection";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <FirstSection></FirstSection>
         <SecondSection></SecondSection>
         <ThirdSection></ThirdSection>
+        <FourthSection></FourthSection>
       </div>
     </div>
   );
