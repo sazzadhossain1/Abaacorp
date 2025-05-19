@@ -1,4 +1,4 @@
-.third_section_parent_div {
+/* .third_section_parent_div {
   background-color: black;
   color: white;
   padding-top: 200px;
@@ -33,6 +33,66 @@
 .third_flex_right_div p {
   width: 85%;
   margin-bottom: 100px;
+}
+.thirdSecPhoto {
+  max-width: 85%;
+} */
+
+.third_section_parent_div {
+  background-color: black;
+  color: white;
+  padding-top: 200px;
+}
+.third_section_heading {
+  margin-bottom: 100px;
+}
+.third_section_flex_div {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  gap: 50px;
+}
+
+.third_section_link_div {
+  width: 250px;
+  position: sticky;
+  top: 150px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.third_section_link_div ul {
+  list-style: none;
+  padding: 0;
+  line-height: 100px;
+}
+
+.third_section_link_div ul li button {
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.third_flex_right_div {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.third_flex_right_div > div {
+  margin-bottom: 100px;
+}
+.third_flex_right_div h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.third_flex_right_div p {
+  width: 85%;
 }
 .thirdSecPhoto {
   max-width: 85%;
