@@ -18,7 +18,7 @@ const Home = () => {
         <FirstSection></FirstSection>
         <SecondSection></SecondSection>
         <ThirdSection></ThirdSection>
-        {/* <FourthSection></FourthSection> */}
+        <FourthSection></FourthSection>
       </div>
     </div>
   );
