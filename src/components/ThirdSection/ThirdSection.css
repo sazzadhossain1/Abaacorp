@@ -38,7 +38,9 @@
   max-width: 85%;
 } */
 
-.third_section_parent_div {
+/* =========================================== */
+
+/* .third_section_parent_div {
   background-color: black;
   color: white;
   padding-top: 200px;
@@ -96,4 +98,143 @@
 }
 .thirdSecPhoto {
   max-width: 85%;
+} */
+
+/* ==================================== */
+
+.third_section_parent_div {
+  background-color: black;
+  color: white;
+  padding-top: 200px;
+}
+
+.third_section_heading {
+  margin-bottom: 100px;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  text-align: center;
+  padding: 0 15px;
+}
+
+.third_section_flex_div {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+.third_section_link_div {
+  width: 250px;
+  position: sticky;
+  top: 150px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.third_section_link_div ul {
+  list-style: none;
+  padding: 0;
+  line-height: 100px;
+}
+
+.third_section_link_div ul li button {
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.third_flex_right_div {
+  flex: 1;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.third_flex_right_div > div {
+  margin-bottom: 100px;
+}
+
+.third_flex_right_div h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.third_flex_right_div p {
+  width: 85%;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  line-height: 1.6;
+}
+
+.thirdSecPhoto {
+  max-width: 85%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* -------- RESPONSIVE BREAKPOINTS -------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .third_section_flex_div {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .third_section_link_div {
+    position: relative;
+    width: 100%;
+    top: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .third_section_link_div ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    line-height: normal;
+  }
+
+  .third_section_link_div ul li button {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .third_flex_right_div p,
+  .thirdSecPhoto {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .third_section_parent_div {
+    padding-top: 120px;
+  }
+
+  .third_section_heading {
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+  }
+
+  .third_section_link_div ul {
+    gap: 10px;
+  }
+
+  .third_section_link_div ul li button {
+    font-size: 0.9rem;
+  }
+
+  .third_flex_right_div h2 {
+    font-size: 1.2rem;
+  }
+
+  .third_flex_right_div p {
+    font-size: 0.9rem;
+  }
 }
