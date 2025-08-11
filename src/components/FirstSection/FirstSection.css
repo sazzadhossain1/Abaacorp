@@ -60,6 +60,77 @@
   background: #333;
 }
 
+@media screen and (max-width: 1200px) {
+  .carousel-header {
+    margin-bottom: -50px;
+    margin-top: 30px;
+  }
+
+  .carousel-dots {
+    margin-top: -90px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .carousel-header {
+    margin-bottom: -100px;
+  }
+
+  .carousel-dots {
+    margin-top: -115px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .carousel-header {
+    margin-bottom: -150px;
+  }
+
+  .carousel-dots {
+    margin-top: -170px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-header {
+    margin-bottom: -100px;
+  }
+
+  .carousel-dots {
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-header {
+    margin-bottom: -150px;
+  }
+
+  .carousel-dots {
+    margin-top: -170px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .carousel-header {
+    margin-bottom: -300px;
+  }
+
+  .carousel-dots {
+    margin-top: -310px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .carousel-header {
+    margin-bottom: -200px;
+  }
+
+  .carousel-header h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .carousel-header p {
+    margin-bottom: 15px;
+  }
+  .carousel-dots {
+    margin-top: -220px;
+  }
+}
 @media (max-width: 768px) {
   .carousel-img {
     width: 80%;
