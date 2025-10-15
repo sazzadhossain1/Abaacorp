@@ -1,91 +1,173 @@
-// import React, { useState } from "react";
+// import React, { useState, useEffect } from "react";
 // import "./NavigationBar.css";
-
-// import { FaBars, FaTimes } from "react-icons/fa";
+// import { FaArrowDown, FaBars, FaTimes } from "react-icons/fa";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 // const NavigationBar = () => {
 //   const [menuOpen, setMenuOpen] = useState(false);
+//   const [scrolled, setScrolled] = useState(false);
 
 //   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (window.scrollY > 50) {
+//         setScrolled(true);
+//       } else {
+//         setScrolled(false);
+//       }
+//     };
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
 //   return (
-//     <div>
-//       <nav className="navbar">
-//         <div className="navbar-container">
-//           <button className="menu-icon" onClick={toggleMenu}>
-//             {menuOpen ? <FaTimes /> : <FaBars />}
-//           </button>
-//           <div className="navbar-left">
-//             <ul className={`menu-left ${menuOpen ? "show" : ""}`}>
-//               <li>Home</li>
-//               <li>About</li>
-//               <li>Services</li>
-//               <li>Contact</li>
-//             </ul>
-//           </div>
+//     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+//       <div className="navbar-container">
+//         <button className="menu-icon" onClick={toggleMenu}>
+//           {menuOpen ? <FaTimes /> : <FaBars />}
+//         </button>
 
-//           <div className="navbar-center">Abaacorp</div>
+//         <div className="navbar-left">
+//           <ul className={`menu-left ${menuOpen ? "show" : ""}`}>
+//             <li>Home</li>
+//             <li>About</li>
 
-//           <ul className={`menu-right ${menuOpen ? "show" : ""}`}>
-//             <li>Blog</li>
-//             <li>Careers</li>
-//             <li>Support</li>
-//             <li>Login</li>
+//             <li className="dropdown">
+//               <div className="service_div">
+//                 Services{" "}
+//                 <FontAwesomeIcon className="faAngleDown" icon={faAngleDown} />
+//               </div>
+//               <ul className="service_nasted_ul">
+//                 <div className="service_nasted_div">
+//                   <div>
+//                     <li>Software System & Development</li>
+//                     <li>App Development</li>
+//                     <li>Website Design & Development</li>
+//                     <li>Domain & Hosting</li>
+//                     <li>BPO Support</li>
+//                     <li>Online Marketing</li>
+//                   </div>
+//                   <div>
+//                     <li>Content Development</li>
+//                     <li>Graphic Design</li>
+//                     <li>UI/UX Design</li>
+//                     <li>Social Media Management</li>
+//                     <li>Market Research</li>
+//                     <li>White Label Solution</li>
+//                   </div>
+//                 </div>
+//               </ul>
+//             </li>
+
+//             <li>Contact</li>
 //           </ul>
 //         </div>
-//       </nav>
-//     </div>
+
+//         <div className="navbar-center">ABAACORP</div>
+
+//         <ul className={`menu-right ${menuOpen ? "show" : ""}`}>
+//           <li>Blog</li>
+//           <li>Careers</li>
+//           <li>Support</li>
+//           <li>Login</li>
+//         </ul>
+//       </div>
+//     </nav>
 //   );
 // };
 
 // export default NavigationBar;
 
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./NavigationBar.css";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div>
-      <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-        <div className="navbar-container">
-          <button className="menu-icon" onClick={toggleMenu}>
-            {menuOpen ? <FaTimes /> : <FaBars />}
-          </button>
-          <div className="navbar-left">
-            <ul className={`menu-left ${menuOpen ? "show" : ""}`}>
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-
-          <div className="navbar-center">ABAACORP</div>
-
-          <ul className={`menu-right ${menuOpen ? "show" : ""}`}>
-            <li>Blog</li>
-            <li>Careers</li>
-            <li>Support</li>
-            <li>Login</li>
+      <nav>
+        <div className="navigation_flex_div">
+          <ul className="main_menu_ul">
+            <FontAwesomeIcon className="faBars" icon={faBars} />
+            <li>
+              <Link>Home</Link>
+            </li>
+            <li>
+              <Link>About</Link>
+            </li>
+            <li className="services_li">
+              <div className="services_div">
+                Services
+                <FontAwesomeIcon className="faAngleDown" icon={faAngleDown} />
+              </div>
+              {/* Nasted UL START */}
+              <div className="nasted_ul_div">
+                <ul className="nasted_ul">
+                  <div>
+                    <li>
+                      <Link>Software System & Development</Link>
+                    </li>
+                    <li>
+                      <Link>App Development</Link>
+                    </li>
+                    <li>
+                      <Link>Website Design & Development</Link>
+                    </li>
+                    <li>
+                      <Link>Domain & Hosting</Link>
+                    </li>
+                    <li>
+                      <Link>BPO Support</Link>
+                    </li>
+                    <li>
+                      <Link>Online Marketing</Link>
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <Link>Content Development</Link>
+                    </li>
+                    <li>
+                      <Link>Graphic Design</Link>
+                    </li>
+                    <li>
+                      <Link>UI/UX Design</Link>
+                    </li>
+                    <li>
+                      <Link>Social Media Management</Link>
+                    </li>
+                    <li>
+                      <Link>Market Research</Link>
+                    </li>
+                    <li>
+                      <Link>White Label Solution</Link>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              {/* Nasted UL END */}
+            </li>
+            <li>
+              <Link>Contact</Link>
+            </li>
+            <li>
+              <Link>Blog</Link>
+            </li>
+            <li>
+              <Link>Careers</Link>
+            </li>
+            <li>
+              <Link>Support</Link>
+            </li>
+            <li>
+              <Link>Login</Link>
+            </li>
           </ul>
+          <div className="ABAACORP">ABAACORP</div>
         </div>
       </nav>
     </div>

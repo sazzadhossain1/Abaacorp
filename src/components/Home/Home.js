@@ -11,14 +11,14 @@ const Home = () => {
   return (
     <div className="home_parent_div">
       <div className="home_child_div">
-        <NavigationBar></NavigationBar>
-        <HeroSection></HeroSection>
+        {/* <NavigationBar></NavigationBar> */}
+        {/* <HeroSection></HeroSection> */}
       </div>
       <div>
-        <FirstSection></FirstSection>
+        {/* <FirstSection></FirstSection>
         <SecondSection></SecondSection>
         <ThirdSection></ThirdSection>
-        <FourthSection></FourthSection>
+        <FourthSection></FourthSection> */}
       </div>
     </div>
   );
