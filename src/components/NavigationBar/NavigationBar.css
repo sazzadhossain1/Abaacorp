@@ -343,3 +343,60 @@ nav {
   transform: translateY(0);
 }
 /* NASTED MENU END */
+
+@media screen and (max-width: 900px) {
+  .navigation_flex_div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navigation_flex_div {
+  }
+  .main_menu_ul {
+    /* display: none; */
+    flex-direction: column;
+
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: -280px;
+
+    text-align: right;
+  }
+  .side_menu_open {
+    left: 0;
+  }
+  .main_menu_ul li {
+    width: 100%;
+    text-align: left;
+    margin-left: -40px;
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  nav {
+    padding: 20px;
+  }
+  .faBars {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  /* NASTED UL START */
+  .nasted_ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 80px;
+    width: 100%;
+  }
+  .nasted_ul div {
+    width: 100%;
+  }
+  .nasted_ul div li {
+  }
+  /* NASTED UL END */
+}

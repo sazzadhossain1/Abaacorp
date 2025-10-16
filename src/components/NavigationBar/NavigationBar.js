@@ -80,32 +80,177 @@
 
 // export default NavigationBar;
 
-import React, { useRef, useState } from "react";
+// import React, { useRef, useState } from "react";
+// import { Link } from "react-router-dom";
+// import "./NavigationBar.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faAngleDown, faBars } from "@fortawesome/free-solid-svg-icons";
+
+// const NavigationBar = () => {
+//   const [menuOpen, setMenuOpen] = useState(false); // ⬅️ menu state
+
+//   const toggleMenu = () => {
+//     setMenuOpen(!menuOpen);
+//   };
+//   return (
+//     <div>
+//       <nav>
+//         <div className="navigation_flex_div">
+//           <FontAwesomeIcon
+//             className="faBars"
+//             icon={faBars}
+//             onClick={toggleMenu}
+//           />
+//           <ul className={`main_menu_ul ${menuOpen ? "side_menu_open" : ""}`}>
+//             <li>
+//               <Link>Home</Link>
+//             </li>
+//             <li>
+//               <Link>About</Link>
+//             </li>
+//             <li className="services_li">
+//               <div className="services_div">
+//                 Services
+//                 <FontAwesomeIcon className="faAngleDown" icon={faAngleDown} />
+//               </div>
+//               {/* Nasted UL START */}
+//               <div className="nasted_ul_div">
+//                 <ul className="nasted_ul">
+//                   <div>
+//                     <li>
+//                       <Link>Software System & Development</Link>
+//                     </li>
+//                     <li>
+//                       <Link>App Development</Link>
+//                     </li>
+//                     <li>
+//                       <Link>Website Design & Development</Link>
+//                     </li>
+//                     <li>
+//                       <Link>Domain & Hosting</Link>
+//                     </li>
+//                     <li>
+//                       <Link>BPO Support</Link>
+//                     </li>
+//                     <li>
+//                       <Link>Online Marketing</Link>
+//                     </li>
+//                   </div>
+//                   <div>
+//                     <li>
+//                       <Link>Content Development</Link>
+//                     </li>
+//                     <li>
+//                       <Link>Graphic Design</Link>
+//                     </li>
+//                     <li>
+//                       <Link>UI/UX Design</Link>
+//                     </li>
+//                     <li>
+//                       <Link>Social Media Management</Link>
+//                     </li>
+//                     <li>
+//                       <Link>Market Research</Link>
+//                     </li>
+//                     <li>
+//                       <Link>White Label Solution</Link>
+//                     </li>
+//                   </div>
+//                 </ul>
+//               </div>
+//               {/* Nasted UL END */}
+//             </li>
+//             <li>
+//               <Link>Contact</Link>
+//             </li>
+//             <li>
+//               <Link>Blog</Link>
+//             </li>
+//             <li>
+//               <Link>Careers</Link>
+//             </li>
+//             <li>
+//               <Link>Support</Link>
+//             </li>
+//             <li>
+//               <Link>Login</Link>
+//             </li>
+//           </ul>
+//           <div className="ABAACORP">ABAACORP</div>
+//         </div>
+//       </nav>
+//     </div>
+//   );
+// };
+
+// export default NavigationBar;
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavigationBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const menuRef = useRef(null); // ⬅️ ref to detect outside click
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const toggleServices = () => {
+    setServicesOpen(!servicesOpen);
+  };
+
+  // ✅ Close menu if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+        setServicesOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div>
       <nav>
-        <div className="navigation_flex_div">
-          <ul className="main_menu_ul">
-            <FontAwesomeIcon className="faBars" icon={faBars} />
+        <div className="navigation_flex_div" ref={menuRef}>
+          {/* Hamburger Icon */}
+          <FontAwesomeIcon
+            className="faBars"
+            icon={faBars}
+            onClick={toggleMenu}
+          />
+
+          {/* Main Menu */}
+          <ul className={`main_menu_ul ${menuOpen ? "side_menu_open" : ""}`}>
             <li>
               <Link>Home</Link>
             </li>
             <li>
               <Link>About</Link>
             </li>
-            <li className="services_li">
+
+            {/* Services Dropdown */}
+            <li className="services_li" onClick={toggleServices}>
               <div className="services_div">
                 Services
                 <FontAwesomeIcon className="faAngleDown" icon={faAngleDown} />
               </div>
-              {/* Nasted UL START */}
-              <div className="nasted_ul_div">
+
+              <div
+                className="nasted_ul_div"
+                style={{
+                  display: servicesOpen ? "block" : "none",
+                }}
+              >
                 <ul className="nasted_ul">
                   <div>
                     <li>
@@ -149,8 +294,9 @@ const NavigationBar = () => {
                   </div>
                 </ul>
               </div>
-              {/* Nasted UL END */}
             </li>
+
+            {/* Other Items */}
             <li>
               <Link>Contact</Link>
             </li>
@@ -167,6 +313,7 @@ const NavigationBar = () => {
               <Link>Login</Link>
             </li>
           </ul>
+
           <div className="ABAACORP">ABAACORP</div>
         </div>
       </nav>
