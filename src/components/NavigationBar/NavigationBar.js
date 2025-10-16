@@ -184,6 +184,7 @@
 // };
 
 // export default NavigationBar;
+
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavigationBar.css";
@@ -193,15 +194,18 @@ import { faAngleDown, faBars } from "@fortawesome/free-solid-svg-icons";
 const NavigationBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const menuRef = useRef(null); // ⬅️ ref to detect outside click
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
+  const menuRef = useRef(null);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const toggleServices = () => setServicesOpen(!servicesOpen);
 
-  const toggleServices = () => {
-    setServicesOpen(!servicesOpen);
-  };
+  // ✅ Detect screen resize to switch between mobile / desktop
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 750);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // ✅ Close menu if clicked outside
   useEffect(() => {
@@ -211,11 +215,8 @@ const NavigationBar = () => {
         setServicesOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -239,64 +240,71 @@ const NavigationBar = () => {
             </li>
 
             {/* Services Dropdown */}
-            <li className="services_li" onClick={toggleServices}>
+            <li
+              className="services_li"
+              onClick={isMobile ? toggleServices : undefined}
+            >
               <div className="services_div">
                 Services
                 <FontAwesomeIcon className="faAngleDown" icon={faAngleDown} />
               </div>
 
+              {/* ✅ Only apply inline style on mobile */}
               <div
                 className="nasted_ul_div"
-                style={{
-                  display: servicesOpen ? "block" : "none",
-                }}
+                style={
+                  isMobile
+                    ? { display: servicesOpen ? "block" : "none" }
+                    : undefined
+                }
               >
                 <ul className="nasted_ul">
                   <div>
                     <li>
-                      <Link>Software System & Development</Link>
+                      <Link to="/Software">Software System & Development</Link>
                     </li>
                     <li>
-                      <Link>App Development</Link>
+                      <Link to="/AppDevelopment">App Development</Link>
                     </li>
                     <li>
-                      <Link>Website Design & Development</Link>
+                      <Link to="/Website">Website Design & Development</Link>
                     </li>
                     <li>
-                      <Link>Domain & Hosting</Link>
+                      <Link to="/DomainAndHosting">Domain & Hosting</Link>
                     </li>
                     <li>
-                      <Link>BPO Support</Link>
+                      <Link to="/BPOSupport">BPO Support</Link>
                     </li>
                     <li>
-                      <Link>Online Marketing</Link>
+                      <Link to="/OnlineMarketing">Online Marketing</Link>
                     </li>
                   </div>
                   <div>
                     <li>
-                      <Link>Content Development</Link>
+                      <Link to="/ContentDevelopment">Content Development</Link>
                     </li>
                     <li>
-                      <Link>Graphic Design</Link>
+                      <Link to="/GraphicDesign">Graphic Design</Link>
                     </li>
                     <li>
-                      <Link>UI/UX Design</Link>
+                      <Link to="/UIUXDesign">UI/UX Design</Link>
                     </li>
                     <li>
-                      <Link>Social Media Management</Link>
+                      <Link to="/SocialMediaManagement">
+                        Social Media Management
+                      </Link>
                     </li>
                     <li>
-                      <Link>Market Research</Link>
+                      <Link to="/MarketResearch">Market Research</Link>
                     </li>
                     <li>
-                      <Link>White Label Solution</Link>
+                      <Link to="/WhiteLabelSolution">White Label Solution</Link>
                     </li>
                   </div>
                 </ul>
               </div>
             </li>
 
-            {/* Other Items */}
             <li>
               <Link>Contact</Link>
             </li>

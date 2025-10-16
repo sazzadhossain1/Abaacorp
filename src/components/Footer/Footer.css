@@ -19,7 +19,6 @@
 }
 
 .footer_text_div p {
-  margin-top: 10px;
   font-size: clamp(0.9rem, 1.2vw, 1rem);
 }
 
@@ -41,12 +40,109 @@
 }
 
 .footerLogo {
-  width: 120px;
+  width: 80px;
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
 
+.footer_number_email_flex_div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.faMobileAlt {
+  font-size: 30px;
+}
+.footer_media_div {
+  margin-top: 20px;
+}
+.footer_media_div a {
+  color: white;
+}
+.faFacebook {
+  font-size: 30px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.faFacebook:hover {
+  background-color: #4267b2;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+
+.faTwitter {
+  font-size: 30px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.faTwitter:hover {
+  background-color: #1da1f2;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+.faLinkedin {
+  font-size: 30px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.faLinkedin:hover {
+  background-color: #0077b5;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+.faInstagram {
+  font-size: 30px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.faInstagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+
+.faYoutube {
+  font-size: 30px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.faYoutube:hover {
+  background-color: red;
+  transition: all 0.3s;
+}
 .copyright {
   color: gray;
   margin-top: 30px;
@@ -63,7 +159,9 @@
   margin-bottom: 20px;
   font-size: clamp(1.1rem, 1.8vw, 1.3rem);
 }
-
+.footer_site_map_div p {
+  margin-top: -10px;
+}
 .footer_working_div {
   line-height: 28px;
 }
@@ -76,7 +174,9 @@
 .footer_time_div {
   margin-top: 20px;
 }
-
+.footer_time_div p {
+  margin-top: -15px;
+}
 /* -------- RESPONSIVE BREAKPOINTS -------- */
 
 /* Tablets */

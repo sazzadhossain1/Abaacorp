@@ -1,6 +1,17 @@
 import React from "react";
 import "./Footer.css";
 import footerLogo from "../../accets/footerPhoot/footerLogo/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faFacebookF,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,19 +33,33 @@ const Footer = () => {
             <img className="footerLogo" src={footerLogo} alt="" />
             <p>Address:</p>
             <p>3653 Briargrove Ln, Dallas, TX 75287</p>
-            <div>
-              <i>I</i>
+            <div className="footer_number_email_flex_div">
+              <FontAwesomeIcon className="faMobileAlt" icon={faMobileAlt} />
               <div>
-                <p> +1.214.736.5989</p>
-                <p>abaacorp.com@gmail.com</p>
+                <span> +1.214.736.5989</span>
+                <br />
+                <span>abaacorp.com@gmail.com</span>
               </div>
             </div>
-            <div>
-              <i>I</i>
-              <i>I</i>
-              <i>I</i>
-              <i>I</i>
-              <i>I</i>
+            <div className="footer_media_div">
+              <Link to="https://www.facebook.com/Abaacorp/" target="_blank">
+                <FontAwesomeIcon className="faFacebook" icon={faFacebookF} />
+              </Link>
+              <Link to="https://x.com/abaacorp" target="_blank">
+                <FontAwesomeIcon className="faTwitter" icon={faTwitter} />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/abaacorp?_l=en_US"
+                target="_blank"
+              >
+                <FontAwesomeIcon className="faLinkedin" icon={faLinkedin} />
+              </Link>
+              <Link to="https://www.instagram.com/abaacorp" target="_blank">
+                <FontAwesomeIcon className="faInstagram" icon={faInstagram} />
+              </Link>
+              <Link to="https://www.youtube.com/abaacorp" target="_blank">
+                <FontAwesomeIcon className="faYoutube" icon={faYoutube} />
+              </Link>
             </div>
           </div>
           <div className="footer_site_map_div">
