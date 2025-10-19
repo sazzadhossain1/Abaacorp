@@ -309,14 +309,14 @@ const NavigationBar = () => {
               <Link>Contact</Link>
             </li>
             <li>
-              <Link>Blog</Link>
+              <Link to="/Blog">Blog</Link>
             </li>
-            <li>
+            {/* <li>
               <Link>Careers</Link>
             </li>
             <li>
               <Link>Support</Link>
-            </li>
+            </li> */}
             <li>
               <Link>Login</Link>
             </li>

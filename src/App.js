@@ -14,6 +14,8 @@ import UIUXDesign from "./components/UIUXDesign/UIUXDesign";
 import SocialMediaManagement from "./components/SocialMediaManagement/SocialMediaManagement";
 import MarketResearch from "./components/MarketResearch/MarketResearch";
 import WhiteLabelSolution from "./components/WhiteLabelSolution/WhiteLabelSolution";
+import Blog from "./components/Blog/Blog";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +31,10 @@ function App() {
           path: "/home",
           element: <Home></Home>,
         },
+        // {
+        //   path: "/aboutUs",
+        //   element: <AboutUs></AboutUs>,
+        // },
         {
           path: "/Software",
           element: (
@@ -78,6 +84,10 @@ function App() {
         {
           path: "/WhiteLabelSolution",
           element: <WhiteLabelSolution></WhiteLabelSolution>,
+        },
+        {
+          path: "/Blog",
+          element: <Blog></Blog>,
         },
       ],
     },
