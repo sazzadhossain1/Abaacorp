@@ -16,7 +16,10 @@ const Home = () => {
         <HeroSection></HeroSection>
       </div>
       <div>
-        <AboutUs></AboutUs>
+        <section id="about">
+          <AboutUs />
+        </section>
+
         <FirstSection></FirstSection>
         <SecondSection></SecondSection>
         <ThirdSection></ThirdSection>

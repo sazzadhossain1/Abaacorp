@@ -236,7 +236,18 @@ const NavigationBar = () => {
               <Link>Home</Link>
             </li>
             <li>
-              <Link>About</Link>
+              <Link
+                to="/#about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.getElementById("about");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                About
+              </Link>
             </li>
 
             {/* Services Dropdown */}

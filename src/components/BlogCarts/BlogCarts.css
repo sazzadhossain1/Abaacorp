@@ -1,0 +1,42 @@
+.blogCarts_parent_div {
+  text-align: left;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  height: 500px;
+  position: relative;
+}
+.blogCarts_photo {
+  width: 100%;
+}
+.faCalenderAlt {
+  margin-right: 10px;
+}
+.blogCarts_btn {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #5192e1 0%,
+    #23ced5 51%,
+    #5192e1 100%
+  );
+  font-size: 16px;
+}
+.blogCarts_btn a {
+  text-decoration: none;
+  color: black;
+}
+.blogCarts_btn:hover {
+  background-image: linear-gradient(
+    to left,
+    rgb(73, 173, 255),
+    rgb(89, 89, 255),
+    skyblue
+  );
+  color: white;
+}
