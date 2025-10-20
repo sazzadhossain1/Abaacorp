@@ -65,7 +65,7 @@ const Blog = () => {
 
   return (
     <div className="blog_parent_div">
-      <h1>Lorem ipsum dolor sit amet.</h1>
+      <h1> Blog</h1>
       <div className="blog_grid_div">
         {blogApi.map((info) => (
           <BlogCarts key={info.id} info={info}></BlogCarts>

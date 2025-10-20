@@ -40,3 +40,9 @@
   );
   color: white;
 }
+
+@media screen and (max-width: 1450px) {
+  .blogCarts_parent_div {
+    height: 570px;
+  }
+}

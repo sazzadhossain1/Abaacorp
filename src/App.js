@@ -16,6 +16,7 @@ import MarketResearch from "./components/MarketResearch/MarketResearch";
 import WhiteLabelSolution from "./components/WhiteLabelSolution/WhiteLabelSolution";
 import Blog from "./components/Blog/Blog";
 import AboutUs from "./components/AboutUs/AboutUs";
+import BlogDetails from "./components/BlogDetails/BlogDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -88,6 +89,10 @@ function App() {
         {
           path: "/Blog",
           element: <Blog></Blog>,
+        },
+        {
+          path: "/Blog/:id",
+          element: <BlogDetails></BlogDetails>,
         },
       ],
     },

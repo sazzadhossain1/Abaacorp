@@ -9,3 +9,20 @@
   margin: auto;
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 1450px) {
+  .blog_grid_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 950px) {
+  .blog_grid_div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .blog_grid_div {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+}

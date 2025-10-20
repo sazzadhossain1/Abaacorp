@@ -17,9 +17,9 @@ const BlogCarts = ({ info }) => {
           {date}
         </span>
         <p>{text}</p>
-        <button className="blogCarts_btn">
-          <Link>{button}</Link>
-        </button>
+        <Link to={`/Blog/${id}`}>
+          <button className="blogCarts_btn">{button}</button>
+        </Link>
       </div>
     </div>
   );
