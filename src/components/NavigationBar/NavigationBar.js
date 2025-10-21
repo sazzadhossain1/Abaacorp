@@ -320,6 +320,20 @@ const NavigationBar = () => {
               <Link>Contact</Link>
             </li>
             <li>
+              <Link
+                to="/#Portfolio"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.getElementById("Portfolio");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
               <Link to="/Blog">Blog</Link>
             </li>
             {/* <li>

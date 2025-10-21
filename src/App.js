@@ -17,6 +17,7 @@ import WhiteLabelSolution from "./components/WhiteLabelSolution/WhiteLabelSoluti
 import Blog from "./components/Blog/Blog";
 import AboutUs from "./components/AboutUs/AboutUs";
 import BlogDetails from "./components/BlogDetails/BlogDetails";
+import PortfolioCart from "./components/PortfolioCart/PortfolioCart";
 
 function App() {
   const router = createBrowserRouter([
@@ -93,6 +94,10 @@ function App() {
         {
           path: "/Blog/:id",
           element: <BlogDetails></BlogDetails>,
+        },
+        {
+          path: "/portfolioCart",
+          element: <PortfolioCart></PortfolioCart>,
         },
       ],
     },

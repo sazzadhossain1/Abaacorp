@@ -7,6 +7,7 @@ import SecondSection from "../SecondSection/SecondSection";
 import ThirdSection from "../ThirdSection/ThirdSection";
 import FourthSection from "../FourthSection/FourthSection";
 import AboutUs from "../AboutUs/AboutUs";
+import Portfolio from "../Portfolio/Portfolio";
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
       <div>
         <section id="about">
           <AboutUs />
+        </section>
+        <section id="Portfolio">
+          <Portfolio />
         </section>
 
         <FirstSection></FirstSection>
