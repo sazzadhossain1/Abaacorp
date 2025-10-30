@@ -44,6 +44,9 @@
   align-items: center;
   gap: 30px;
 }
+.fourthSection_flex_div small {
+  color: white;
+}
 .fourthsection_logo_photo {
   border-radius: 15px;
 }

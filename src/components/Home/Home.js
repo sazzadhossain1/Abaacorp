@@ -20,14 +20,18 @@ const Home = () => {
         <section id="about">
           <AboutUs />
         </section>
+
+        <section id="Services">
+          <FourthSection></FourthSection>
+        </section>
+
         <section id="Portfolio">
           <Portfolio />
         </section>
 
         <FirstSection></FirstSection>
         <SecondSection></SecondSection>
-        <ThirdSection></ThirdSection>
-        <FourthSection></FourthSection>
+        {/* <ThirdSection></ThirdSection> */}
       </div>
     </div>
   );

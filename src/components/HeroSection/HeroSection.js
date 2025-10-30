@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
-import photoOne from "../../accets/heroPhoto/hero1.webp";
-import photoTwo from "../../accets/heroPhoto/hero2.webp";
-import photoThree from "../../accets/heroPhoto/hero3.webp";
+import photoOne from "../../accets/heroPhoto/hero1.jpg";
+import photoTwo from "../../accets/heroPhoto/hero2.jpg";
+import photoThree from "../../accets/heroPhoto/hero3.jpg";
 
 const images = [photoOne, photoTwo, photoThree];
 

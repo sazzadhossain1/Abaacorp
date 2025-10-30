@@ -13,6 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: red; */
+  margin-top: 53px;
 }
 /* Add this to existing styles */
 .carousel-image.expand,

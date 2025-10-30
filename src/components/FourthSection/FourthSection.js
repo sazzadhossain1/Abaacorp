@@ -1,9 +1,5 @@
 import React from "react";
 import "./FourthSection.css";
-import fourthSectionPhoto from "../../accets/forthSectionPhoto/fourthSectionPhoto.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPenRuler } from "@fortawesome/free-solid-svg-icons";
-import { faFigma } from "@fortawesome/free-brands-svg-icons";
 
 import software from "../../accets/forthSectionPhoto/iconPhoto/software-development.png";
 import appDevelopment from "../../accets/forthSectionPhoto/iconPhoto/app-development.png";
@@ -21,7 +17,7 @@ import WhiteLabel from "../../accets/forthSectionPhoto/iconPhoto/white-level.png
 const FourthSection = () => {
   return (
     <div className="fourth_section_parent_div">
-      <p>Our Process</p>
+      {/* <p>Our Process</p> */}
       <h1>Services</h1>
       <div className="fourthSection_grid_div">
         <div className="fourthSection_flex_div">

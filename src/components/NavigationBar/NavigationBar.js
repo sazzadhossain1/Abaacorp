@@ -190,6 +190,7 @@ import { Link } from "react-router-dom";
 import "./NavigationBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faBars } from "@fortawesome/free-solid-svg-icons";
+import logo from "../../accets/footerPhoot/footerLogo/logo.png";
 
 const NavigationBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -231,6 +232,10 @@ const NavigationBar = () => {
           />
 
           {/* Main Menu */}
+          <div className="ABAACORP">
+            <img className="natigation_logo" src={logo} alt="" />
+            {/* ABAACORP */}
+          </div>
           <ul className={`main_menu_ul ${menuOpen ? "side_menu_open" : ""}`}>
             <li>
               <Link>Home</Link>
@@ -249,9 +254,23 @@ const NavigationBar = () => {
                 About
               </Link>
             </li>
+            <li>
+              <Link
+                to="/#Services"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.getElementById("Services");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                Services
+              </Link>
+            </li>
 
             {/* Services Dropdown */}
-            <li
+            {/* <li
               className="services_li"
               onClick={isMobile ? toggleServices : undefined}
             >
@@ -260,7 +279,7 @@ const NavigationBar = () => {
                 <FontAwesomeIcon className="faAngleDown" icon={faAngleDown} />
               </div>
 
-              {/* ✅ Only apply inline style on mobile */}
+              
               <div
                 className="nasted_ul_div"
                 style={
@@ -314,10 +333,24 @@ const NavigationBar = () => {
                   </div>
                 </ul>
               </div>
-            </li>
+            </li> */}
 
-            <li>
+            {/* <li>
               <Link>Contact</Link>
+            </li> */}
+            <li>
+              <Link
+                to="/#Contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.getElementById("Contact");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                Contact
+              </Link>
             </li>
             <li>
               <Link
@@ -343,11 +376,11 @@ const NavigationBar = () => {
               <Link>Support</Link>
             </li> */}
             <li>
-              <Link>Login</Link>
+              <Link to="https://mail.hostinger.com/" target="_blank">
+                Login
+              </Link>
             </li>
           </ul>
-
-          <div className="ABAACORP">ABAACORP</div>
         </div>
       </nav>
     </div>

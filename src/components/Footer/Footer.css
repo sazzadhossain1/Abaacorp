@@ -51,7 +51,14 @@
   align-items: center;
   gap: 20px;
 }
-
+.footer_faWhatsapp {
+  font-size: 30px;
+  color: green;
+}
+.footer_whatsApp_num {
+  color: white;
+  text-decoration: none;
+}
 .faMobileAlt {
   font-size: 30px;
 }
@@ -171,12 +178,12 @@
   font-size: clamp(1.1rem, 1.8vw, 1.3rem);
 }
 
-.footer_time_div {
+/* .footer_time_div {
   margin-top: 20px;
-}
-.footer_time_div p {
+} */
+/* .footer_time_div p {
   margin-top: -15px;
-}
+} */
 /* -------- RESPONSIVE BREAKPOINTS -------- */
 
 /* Tablets */

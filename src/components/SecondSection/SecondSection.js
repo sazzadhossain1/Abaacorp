@@ -8,11 +8,11 @@ const SecondSection = () => {
   return (
     <div className="secondSection_parent_div">
       <div className="secondSection_text_div">
-        <h1>
+        {/* <h1>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nemo
           quaerat dolore corrupti alias eum maiores suscipit exercitationem
           molestiae.
-        </h1>
+        </h1> */}
       </div>
       <div className="player_div">
         <div className="player_img_div">
