@@ -32,8 +32,10 @@
   flex-shrink: 0;
   scroll-snap-align: center;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.3s ease;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.28) 0px 3px 8px;
 }
 
 .carousel-img:hover {

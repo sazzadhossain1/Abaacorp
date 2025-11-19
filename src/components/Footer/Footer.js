@@ -63,7 +63,7 @@ const Footer = () => {
 
               <div className="footer_number_email_flex_div">
                 <FontAwesomeIcon className="faMobileAlt" icon={faEnvelope} />
-                <p>abaacorp.com@gmail.com</p>
+                <p>support@abaacorp.com</p>
               </div>
             </div>
           </div>

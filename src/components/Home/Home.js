@@ -29,7 +29,7 @@ const Home = () => {
           <Portfolio />
         </section>
 
-        <FirstSection></FirstSection>
+        {/* <FirstSection></FirstSection> */}
         <SecondSection></SecondSection>
         {/* <ThirdSection></ThirdSection> */}
       </div>

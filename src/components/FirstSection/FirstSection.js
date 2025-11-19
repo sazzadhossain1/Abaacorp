@@ -1,13 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./FirstSection.css";
-import firstSection1 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto1.webp";
-import firstSection2 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto2.webp";
-import firstSection3 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto3.webp";
-import firstSection4 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto4.webp";
-import firstSection5 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto5.webp";
-import firstSection6 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto6.webp";
-import firstSection7 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto7.webp";
-import firstSection8 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto8.webp";
+import firstSection1 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto1.png";
+import firstSection2 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto2.png";
+import firstSection3 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto3.png";
+import firstSection4 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto4.png";
+import firstSection5 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto5.png";
+import firstSection6 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto6.png";
+import firstSection7 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto7.png";
+// import firstSection8 from "../../accets/firstSectionPhoto/carouselPhoto/firstSectionPhoto8.webp";
 
 const images = [
   firstSection1,
@@ -17,7 +17,7 @@ const images = [
   firstSection5,
   firstSection6,
   firstSection7,
-  firstSection8,
+  // firstSection8,
 ];
 
 const FirstSection = () => {
@@ -54,9 +54,10 @@ const FirstSection = () => {
   return (
     <div className="carousel-wrapper">
       <div className="carousel-header">
-        <h1>Lorem ipsum dolor, sit amet consectetur</h1>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <a href="/">Lorem ipsum dolor sit amet consectetur.</a>
+        {/* <img src={firstSection1} alt="" /> */}
+        <h1>Portfolio</h1>
+        {/* <p>Lorem ipsum dolor sit amet consectetur.</p> */}
+        {/* <a href="/">Lorem ipsum dolor sit amet consectetur.</a> */}
       </div>
 
       <div className="carousel-container" ref={carouselRef}>
