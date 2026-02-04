@@ -8,6 +8,7 @@ import ThirdSection from "../ThirdSection/ThirdSection";
 import FourthSection from "../FourthSection/FourthSection";
 import AboutUs from "../AboutUs/AboutUs";
 import Portfolio from "../Portfolio/Portfolio";
+import HowToGetStarted from "../HowToGetStarted/HowToGetStarted";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
         <section id="Services">
           <FourthSection></FourthSection>
         </section>
-
+        <HowToGetStarted></HowToGetStarted>
         <section id="Portfolio">
           <Portfolio />
         </section>
@@ -38,3 +39,24 @@ const Home = () => {
 };
 
 export default Home;
+
+// NODE //
+// (How to Get Started) ati akti section hobe. Section ti boshbe (portfolio) section er upore. x
+
+//(1. Book a Free Consultation x
+//2. Lock on a Plan/Project x
+//3. Make a very small Deposit x
+//4. Get the Project Delivered & Then Make Full Payment) ai 4 ti line cart akare boshbe. x
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// 2/02/2026 //
+
+// (Who We Are) ai section er photo change korte hobe, Facebook theke group photo add korte hobe. X
+// (How to get start) ai section er photo gulo aro relevant korte hobe. X
+
+// (Service) ai section er lorem ipsum text gulo change korte hobe, Abaacorp er main site thke text nite hobe.
+
+// (Portfolio) ai section e 4 ti cart banate hobe, total 8 ti cart boshbe, SEE MORE button boshbe, btn e click korle onno akta page e chole jabe oi page e facebook er protita chobi niye cart akare add korte hobe.
+// Navigation er logo aro aktu left side e nite hobe.
+// Footer e (site map) ai likha ti akshathe korte hobe.

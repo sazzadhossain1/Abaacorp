@@ -1,0 +1,23 @@
+.HowToGetStarted_parent_div {
+  background-color: gainsboro;
+  margin-top: 50px;
+  padding: 50px;
+}
+.howToGetStarted_grid_div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75%;
+  margin: auto;
+  gap: 20px;
+}
+.howToGetStarted_grid_div div {
+  text-align: left;
+  background-color: ghostwhite;
+  padding: 20px;
+}
+
+.howToGetStarted_photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
