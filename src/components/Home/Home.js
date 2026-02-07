@@ -57,6 +57,36 @@ export default Home;
 
 // (Service) ai section er lorem ipsum text gulo change korte hobe, Abaacorp er main site thke text nite hobe.
 
-// (Portfolio) ai section e 4 ti cart banate hobe, total 8 ti cart boshbe, SEE MORE button boshbe, btn e click korle onno akta page e chole jabe oi page e facebook er protita chobi niye cart akare add korte hobe.
-// Navigation er logo aro aktu left side e nite hobe.
-// Footer e (site map) ai likha ti akshathe korte hobe.
+// (Portfolio) ai section e 4 ti cart banate hobe, total 8 ti cart boshbe, SEE MORE button boshbe, btn e click korle onno akta page e chole jabe oi page e facebook er protita chobi niye cart akare add korte hobe. X
+
+// Navigation er logo aro aktu left side e nite hobe. X
+
+// Footer e (site map) ai likha ti akshathe korte hobe. X
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// 7/2/2026
+
+// Who we are - ai section er photo change kore face dekha jay amon group photo dite hobe. X
+// How to Get Started - ai section er cart er title er font size boro hobe.  X
+
+// Portfolio - ai section er photo gulo photo er size onujai boshbe. cart er background color remove korte hobe. border add korte hobe. X
+
+// Service - ai section er lorem ipsum remove korte hobe. ai section ti cart akare hobe and 4 ti cart korte hobe.
+
+// Servece - section er order(
+// Website Design & Development
+// Software & System Development
+// App Development
+// Graphic Design
+// video editing
+// BPO Support
+// digital marketing
+// Domain & Hosting
+// UI/UX Design
+// Social Media Management
+// Content Development
+// White Label Solution
+
+// Market Research replace to video editing.
+// Online Marketing prelace to digital marketing.)

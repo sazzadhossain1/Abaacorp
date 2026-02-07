@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer_site_map_div">
-            <h2>Site Map</h2>
+            <h2>Sitemap</h2>
             <p>- About Us</p>
             <p>- Our Service</p>
             <p>- Portfolio</p>

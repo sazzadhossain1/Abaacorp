@@ -18,6 +18,7 @@ import Blog from "./components/Blog/Blog";
 import AboutUs from "./components/AboutUs/AboutUs";
 import BlogDetails from "./components/BlogDetails/BlogDetails";
 import PortfolioCart from "./components/PortfolioCart/PortfolioCart";
+import PortfolioInnerPage from "./components/PortfolioInnerPage/PortfolioInnerPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -98,6 +99,10 @@ function App() {
         {
           path: "/portfolioCart",
           element: <PortfolioCart></PortfolioCart>,
+        },
+        {
+          path: "/portfolioInnerPage",
+          element: <PortfolioInnerPage></PortfolioInnerPage>,
         },
       ],
     },

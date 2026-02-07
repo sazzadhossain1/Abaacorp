@@ -307,8 +307,9 @@ nav {
   font-size: 20px;
 }
 .natigation_logo {
-  width: 28%;
+  width: 40%;
   padding-top: 10px;
+  margin-left: -70px;
 }
 /* NASTED MENU START */
 

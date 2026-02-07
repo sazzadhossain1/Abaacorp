@@ -16,6 +16,9 @@
   padding: 20px;
 }
 
+.howToGetStarted_grid_div div h4 {
+  font-size: 18px;
+}
 .howToGetStarted_photo {
   width: 100%;
   height: 200px;

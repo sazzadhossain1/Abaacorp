@@ -26,3 +26,33 @@
   padding: 2px;
   object-fit: cover;
 }
+
+.portfolio_Cart_Img {
+  width: 100%;
+}
+.portfolio_grid_div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 85%;
+  margin: auto;
+  gap: 20px;
+}
+.portfolio_cart_div {
+  border: 1px solid gray;
+  padding: 20px;
+}
+.portfolio_cart_div img {
+  height: 100%;
+  object-fit: contain;
+}
+.portfolio_see_more_btn {
+  margin-top: 50px;
+  border: none;
+  background-color: gray;
+  color: white;
+  padding: 15px;
+  font-weight: 600;
+  width: 11%;
+  border-radius: 5px;
+  cursor: pointer;
+}

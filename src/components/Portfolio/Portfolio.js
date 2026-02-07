@@ -22,6 +22,7 @@ import eight from "../../accets/portfolioPhoto/New folder/8.jpg";
 import nine from "../../accets/portfolioPhoto/New folder/9.png";
 import ten from "../../accets/portfolioPhoto/New folder/10.png";
 import elaven from "../../accets/portfolioPhoto/New folder/11.png";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const responsive = {
@@ -108,7 +109,7 @@ const Portfolio = () => {
         <br />
         <br />
       </div>
-      <div className="portfolio_another_main_div">
+      {/* <div className="portfolio_another_main_div">
         <Carousel responsive={responsive}>
           <div>
             <img className="portfolio_img_another" src={one} alt="" />
@@ -173,7 +174,37 @@ const Portfolio = () => {
             />
           </div>
         </Carousel>
+      </div> */}
+      <div className="portfolio_grid_div">
+        <div className="portfolio_cart_div">
+          <img className="portfolio_Cart_Img" src={four} alt="" />
+        </div>
+        <div className="portfolio_cart_div">
+          <img className="portfolio_Cart_Img" src={six} alt="" />
+        </div>
+        <div className="portfolio_cart_div">
+          <img className="portfolio_Cart_Img" src={saven} alt="" />
+        </div>
+        <div className="portfolio_cart_div">
+          <img className="portfolio_Cart_Img" src={one} alt="" />
+        </div>
+        <div className="portfolio_cart_div">
+          <img className="portfolio_Cart_Img" src={two} alt="" />
+        </div>
+        <div className="portfolio_cart_div">
+          <img className="portfolio_Cart_Img" src={three} alt="" />
+        </div>
+
+        <div className="portfolio_cart_div">
+          <img className="portfolio_Cart_Img" src={eight} alt="" />
+        </div>
+        <div className="portfolio_cart_div">
+          <img className="portfolio_Cart_Img" src={five} alt="" />
+        </div>
       </div>
+      <Link to="/portfolioInnerPage">
+        <button className="portfolio_see_more_btn">See More</button>
+      </Link>
     </div>
   );
 };
