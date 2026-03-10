@@ -60,3 +60,29 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1060px) {
+  .portfolio_grid_div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 921px) {
+  .portfolio_grid_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 811px) {
+  .portfolio_see_more_btn {
+    width: 17%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .portfolio_grid_div {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .portfolio_see_more_btn {
+    width: 40%;
+  }
+}
