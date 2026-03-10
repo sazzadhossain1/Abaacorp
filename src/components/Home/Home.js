@@ -26,12 +26,12 @@ const Home = () => {
           <FourthSection></FourthSection>
         </section>
         <HowToGetStarted></HowToGetStarted>
-        <section id="Portfolio">
+        {/* <section id="Portfolio">
           <Portfolio />
-        </section>
+        </section> */}
 
         {/* <FirstSection></FirstSection> */}
-        <SecondSection></SecondSection>
+        {/* <SecondSection></SecondSection> */}
         {/* <ThirdSection></ThirdSection> */}
       </div>
     </div>

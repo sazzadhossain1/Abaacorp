@@ -24,3 +24,25 @@
   height: 200px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1350px) {
+  .howToGetStarted_grid_div {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 1261px) {
+  .howToGetStarted_grid_div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 921px) {
+  .howToGetStarted_grid_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+  .howToGetStarted_grid_div {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
