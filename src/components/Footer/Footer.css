@@ -210,10 +210,17 @@
   .footer_grid_div {
     grid-template-columns: 1fr;
     text-align: center;
-    width: 95%;
+    width: 90%;
     gap: 20px;
   }
-
+  /* .footer_contact_div {
+    text-align: center;
+  } */
+  .footer_contact_number_div {
+    /* background-color: red; */
+    width: 40%;
+    margin: auto;
+  }
   .footer_site_map_div,
   .footer_working_div {
     text-align: center;

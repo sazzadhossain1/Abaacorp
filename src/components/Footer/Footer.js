@@ -34,11 +34,11 @@ const Footer = () => {
         </div>
         <div className="footer_blank_div"></div>
         <div className="footer_grid_div">
-          <div>
+          <div className="footer_contact_div">
             <img className="footerLogo" src={footerLogo} alt="" />
             {/* <p>Address:</p> */}
             <p>3653 Briargrove Ln, Dallas, TX 75287</p>
-            <div>
+            <div className="footer_contact_number_div">
               <div className="footer_number_email_flex_div">
                 <FontAwesomeIcon className="faMobileAlt" icon={faMobileAlt} />
                 <p> +1.469.531.1550</p>
