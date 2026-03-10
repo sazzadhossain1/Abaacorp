@@ -3,6 +3,7 @@ import "./HeroSection.css";
 import photoOne from "../../accets/heroPhoto/hero1.jpg";
 import photoTwo from "../../accets/heroPhoto/hero2.jpg";
 import photoThree from "../../accets/heroPhoto/hero3.jpg";
+import heroImg from "../../accets/heroPhoto/heroImg.jpg";
 
 const images = [photoOne, photoTwo, photoThree];
 
@@ -38,12 +39,15 @@ const HeroSection = () => {
   }, [currentImageIndex]);
 
   return (
-    <div className="carousel-container">
-      <img
-        src={images[currentImageIndex]}
-        alt="carousel"
-        className={`carousel-image ${animationStage}`}
-      />
+    <div>
+      {/* <div className="carousel-container">
+        <img
+          src={images[currentImageIndex]}
+          alt="carousel"
+          className={`carousel-image ${animationStage}`}
+        />
+      </div> */}
+      <img className="heroImg" src={heroImg} alt="" />
     </div>
   );
 };

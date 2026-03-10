@@ -10,7 +10,8 @@
   gap: 20px;
 }
 .portfolioInnerPage_grid_div div {
-  background-color: rgb(179, 179, 179);
+  /* background-color: rgb(179, 179, 179); */
+  border: 1px solid gray;
   padding: 20px;
 }
 .portfolioInnerPage_grid_div div img {

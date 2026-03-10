@@ -18,8 +18,10 @@ const SecondSection = () => {
         <div className="player_img_div">
           <img className="playerPhoto" src={playerPhoto} alt="" />
           <div>
-            <FontAwesomeIcon className="faCirclePlay" icon={faCirclePlay} />
-            <h2 className="watch_promo">Watch Promo</h2>
+            {/* <FontAwesomeIcon className="faCirclePlay" icon={faCirclePlay} /> */}
+            <h2 className="top_quality">
+              Best Service at a Very Affordable Rate
+            </h2>
           </div>
         </div>
       </div>

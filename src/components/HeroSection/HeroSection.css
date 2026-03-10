@@ -38,6 +38,10 @@
   animation: slideUpSmall 1s forwards;
 }
 
+.heroImg {
+  width: 100%;
+  height: 850px;
+}
 @keyframes slideUpSmall {
   0% {
     transform: translateY(100%);

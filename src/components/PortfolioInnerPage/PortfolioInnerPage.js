@@ -20,19 +20,7 @@ const PortfolioInnerPage = () => {
 
       <div className="portfolioInnerPage_grid_div">
         <div>
-          <img src={one} alt="" />
-        </div>
-        <div>
-          <img src={two} alt="" />
-        </div>
-        <div>
-          <img src={three} alt="" />
-        </div>
-        <div>
           <img src={four} alt="" />
-        </div>
-        <div>
-          <img src={five} alt="" />
         </div>
         <div>
           <img src={six} alt="" />
@@ -40,6 +28,20 @@ const PortfolioInnerPage = () => {
         <div>
           <img src={saven} alt="" />
         </div>
+        <div>
+          <img src={three} alt="" />
+        </div>
+        <div>
+          <img src={five} alt="" />
+        </div>
+
+        <div>
+          <img src={one} alt="" />
+        </div>
+        <div>
+          <img src={two} alt="" />
+        </div>
+
         <div>
           <img src={eight} alt="" />
         </div>

@@ -271,20 +271,6 @@ const NavigationBar = () => {
 
             <li>
               <Link
-                to="/#Contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const section = document.getElementById("Contact");
-                  if (section) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/#Portfolio"
                 onClick={(e) => {
                   e.preventDefault();
@@ -297,9 +283,24 @@ const NavigationBar = () => {
                 Portfolio
               </Link>
             </li>
+
             <li>
-              <Link to="/Blog">Blog</Link>
+              <Link
+                to="/#Contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.getElementById("Contact");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                Contact
+              </Link>
             </li>
+            {/* <li>
+              <Link to="/Blog">Blog</Link>
+            </li> */}
             {/* <li>
               <Link>Careers</Link>
             </li>

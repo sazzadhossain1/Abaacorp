@@ -7,7 +7,7 @@
   color: white;
   z-index: 0;
   padding: 100px;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .fourth_section_parent_div h1 {
@@ -33,22 +33,20 @@
 /* --- GRID SECTION --- */
 .fourthSection_grid_div {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: left;
+  grid-template-columns: repeat(4, 1fr);
+  /* text-align: left; */
   gap: 50px;
   margin-top: 100px;
 }
 
 .fourthSection_flex_div {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  background-color: white;
+  color: black;
+  padding: 12px;
 }
-.fourthSection_flex_div small {
-  color: white;
-}
+
 .fourthsection_logo_photo {
-  border-radius: 15px;
+  width: 50%;
 }
 .UI-UX {
   background-color: white;

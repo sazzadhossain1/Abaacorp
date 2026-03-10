@@ -72,21 +72,24 @@ export default Home;
 
 // Portfolio - ai section er photo gulo photo er size onujai boshbe. cart er background color remove korte hobe. border add korte hobe. X
 
-// Service - ai section er lorem ipsum remove korte hobe. ai section ti cart akare hobe and 4 ti cart korte hobe.
+// Service - ai section er lorem ipsum remove korte hobe. ai section ti cart akare hobe and 4 ti cart korte hobe. x
 
 // Servece - section er order(
-// Website Design & Development
-// Software & System Development
-// App Development
-// Graphic Design
-// video editing
-// BPO Support
-// digital marketing
-// Domain & Hosting
-// UI/UX Design
-// Social Media Management
-// Content Development
-// White Label Solution
+// Website Design & Development x
+// Software & System Development x
+// App Development x
+// Graphic Design x
+// Video Editing x
+// BPO Support x
+// Digital Marketing x
+// Domain & Hosting x
+// UI/UX Design x
+// Social Media Management x
+// Content Development x
+// White Label Solution x
 
-// Market Research replace to video editing.
-// Online Marketing prelace to digital marketing.)
+// Market Research replace to video editing. x
+// Online Marketing prelace to Digital Marketing.) x
+
+// 3/10/2026
+// Top Quality Work at a Minimum Rate ---- replace to ----- Best Service at a Very Affordable Rate. x

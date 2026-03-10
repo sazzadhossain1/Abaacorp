@@ -73,7 +73,7 @@ const Footer = () => {
             <p>- Our Service</p>
             <p>- Portfolio</p>
             <p>- Contact</p>
-            <p>- Blogs</p>
+            <p>- Mail Access</p>
             {/* <p>- Admin Login</p> */}
           </div>
           <div className="footer_working_div">

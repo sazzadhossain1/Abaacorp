@@ -47,7 +47,7 @@ const Portfolio = () => {
   return (
     <div>
       <div className="portfolio_main_div">
-        <h1>Portfolio</h1>
+        <h1 className="portfollio_title">Portfolio</h1>
         {/* <Carousel responsive={responsive}>
           <div>
             <img className="portfolio_img" src={portfolioOne} alt="" />

@@ -7,6 +7,7 @@
 }
 .player_div {
   background-color: black;
+  /* padding: 20px; */
 }
 
 .player_img_div {
@@ -19,20 +20,20 @@
   margin-top: -150px;
   filter: brightness(0.8);
 }
-.faCirclePlay {
+/* .faCirclePlay {
   color: white;
   font-size: 70px;
   position: absolute;
   left: 50%;
   top: 30%;
   cursor: pointer;
-}
-.watch_promo {
+} */
+.top_quality {
   color: white;
   font-size: 30px;
   position: absolute;
-  left: 46%;
-  top: 55%;
+  top: 35%;
+  right: 35%;
 }
 
 @media screen and (max-width: 1536px) {
